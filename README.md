@@ -4,7 +4,10 @@
 2.  Publish the image to docker hub
 3.  Github actions
 
-#### IMP note
+#### Imaprtent note
+
+1.  In github need to add the environment variable docker userName and token.
+2.  Docker hub token need to generate in docker hub under the myaccount -> security
 
 ```bash
 # In github/workflow have the all the github action steps like branch, push to docker, docker credentials tags and context
@@ -34,7 +37,7 @@ docker images
 docker ps
 ```
 
-### Push Docker image to docker hum
+### Push Docker image to docker hub
 
 ```bash
 #create repo in hub.docker
