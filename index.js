@@ -5,6 +5,10 @@ app.get('/', function (req, res) {
     res.send('{ "response": "Hello From Prashant" }');
 });
 
+app.get('/sample', function (req, res) {
+    res.send('{ "response": "sample api is working fine" }');
+});
+
 app.get('/will', function (req, res) {
     res.send('{ "response": "Hello World" }');
 });
