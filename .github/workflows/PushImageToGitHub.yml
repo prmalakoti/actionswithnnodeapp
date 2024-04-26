@@ -23,4 +23,4 @@ jobs:
         with:
           context: . # if you have code in your own folder you can mention here
           push: true
-          tags: prashantmalakoti701/githubaction:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/githubaction:latest
