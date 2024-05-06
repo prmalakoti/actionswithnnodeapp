@@ -24,3 +24,16 @@ jobs:
           context: . # if you have code in your own folder you can mention here
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/testrepo:latest
+
+  # this is deploy the code on ec2 instance right now I do't have active instances will keep of todo mode
+
+  # deploy:
+  #   needs: build
+  #   runs-on: self-hosted
+  #   steps:
+  #     - name: Pull image from docker hub
+  #       run: docker pull prashantmalakoti701/testrepo:latest
+  #     - name: Delete old container
+  #       run: docker rm -f testrepo-container
+  #     - name: Run Docker Container
+  #       run: docker run -d -p 3000:3000 --name testrepo-container -e MONGO_PASSWORD='${{ secrets.MONGO_PASSWORD }}' prashantmalakoti701/testrepo
